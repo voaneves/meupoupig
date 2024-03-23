@@ -61,7 +61,11 @@
 
 "Meu Poupig" emerge como uma inovadora plataforma de educação financeira, especificamente concebida para o público jovem do Brasil. Este projeto, fruto do trabalho de conclusão do Grupo 16 da XP Educação, adota uma abordagem progressiva ao aprendizado financeiro. Através de uma envolvente combinação de quizzes, vídeos, textos e jogos dentro de trilhas de aprendizado cuidadosamente estruturadas, nossa missão é revitalizar o ensino de finanças. Ao torná-lo mais dinâmico, interativo e atraente, almejamos capturar o interesse dos jovens, incentivando sua participação ativa e combatendo o desinteresse e a evasão.
 
-![Screenshot da página](screenshot)
+<div align="center">
+  <a href="https://voaneves.com/meupoupig">
+    <img src="assets/screenshot.png" alt="Screenshot da página inicial">
+  </a>
+</div>
 
 O projeto "Meu Poupig" nasceu da visão de superar os obstáculos impostos pela educação financeira tradicional, através do poder transformador da tecnologia da informação. Diante de um cenário onde a educação financeira é frequentemente inacessível ou desinteressante para muitos, especialmente para jovens em situações de vulnerabilidade, "Meu Poupig" busca ser uma ponte para o empoderamento. Proporcionando aos jovens não apenas o conhecimento, mas também as ferramentas práticas necessárias, nosso objetivo é habilitá-los a tomar decisões financeiras sólidas e informadas, estabelecendo as bases para um futuro financeiramente seguro e independente.
 
@@ -153,4 +157,3 @@ E a todos que de alguma forma contribuíram para o sucesso deste projeto. Seu ap
 [issues-url]: https://github.com/voaneves/meupoupig/issues
 [license-shield]: https://img.shields.io/github/license/voaneves/meupoupig.svg?style=for-the-badge
 [license-url]: https://github.com/voaneves/meupoupig/blob/main/LICENSE
-[screenshot]: assets/screenshot.png
