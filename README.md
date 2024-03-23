@@ -16,7 +16,7 @@
   </a>
   <h3 align="center">meupoupig</h3>
   <p align="center">
-    Meu Poupig, um aplicativo de educação financeira gratuito para ensinar jovens a investir.
+    Um aplicativo de educação financeira gratuito e divertido para ensinar jovens a investir.
     <br />
     <a href="https://github.com/voaneves/meupoupig"><strong>Explore a documentação »</strong></a>
     <br />
@@ -57,7 +57,7 @@
   </ol>
 </details>
 
-## 1. Sobre o Projeto
+## Sobre o Projeto
 
 "Meu Poupig" emerge como uma inovadora plataforma de educação financeira, especificamente concebida para o público jovem do Brasil. Este projeto, fruto do trabalho de conclusão do Grupo 16 da XP Educação, adota uma abordagem progressiva ao aprendizado financeiro. Através de uma envolvente combinação de quizzes, vídeos, textos e jogos dentro de trilhas de aprendizado cuidadosamente estruturadas, nossa missão é revitalizar o ensino de finanças. Ao torná-lo mais dinâmico, interativo e atraente, almejamos capturar o interesse dos jovens, incentivando sua participação ativa e combatendo o desinteresse e a evasão.
 
@@ -147,7 +147,7 @@ E a todos que de alguma forma contribuíram para o sucesso deste projeto. Seu ap
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-[contributors-shield]: https://img.shields.io/github/contributors/voaneves/meupoupiug.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/voaneves/meupoupig.svg?style=for-the-badge
 [contributors-url]: https://github.com/voaneves/meupoupig/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/voaneves/meupoupig.svg?style=for-the-badge
 [forks-url]: https://github.com/voaneves/meupoupig/network/members
