@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+      content="Aprenda a investir e aumente sua renda com Meu Poupig. Jogue e torne-se o chefão do seu dinheiro, tudo de graça e com diversão.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://meupoupig.github.io">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap"
+      rel="stylesheet">
+    <!-- favicon <link rel="icon" href="path/to/favicon.ico" type="image/x-icon"> -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Meu Poupig | Vire o chefão do seu dinheiro 💵</title>
+
+    <!-- Open Graph / Facebook
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.yourwebsite.com/page-url">
+    <meta property="og:title"
+      content="Meu Poupig | Vire o chefão do seu dinheiro">
+    <meta property="og:description"
+      content="Aprenda a investir e aumente sua renda com Meu Poupig. Jogue e torne-se o chefão do seu dinheiro, tudo de graça e com diversão.">
+    <meta property="og:image"
+      content="https://www.yourwebsite.com/path/to/image.jpg">-->
+
+    <!-- Twitter
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.yourwebsite.com/page-url">
+    <meta property="twitter:title"
+      content="Meu Poupig | Vire o chefão do seu dinheiro">
+    <meta property="twitter:description"
+      content="Aprenda a investir e aumente sua renda com Meu Poupig. Jogue e torne-se o chefão do seu dinheiro, tudo de graça e com diversão.">
+    <meta property="twitter:image"
+      content="https://www.yourwebsite.com/path/to/image.jpg"> -->
+
+    <!-- Schema.org
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Game",
+      "name": "Meu Poupig",
+      "description": "Aprenda a investir e aumente sua renda com Meu Poupig. Jogue e torne-se o chefão do seu dinheiro, tudo de graça e com diversão.",
+      "image": "https://www.yourwebsite.com/path/to/image.jpg",
+      "url": "https://www.yourwebsite.com/page-url"
+    }
+    </script> -->
+
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/service-worker.js')
+            .then(reg => console.log('Service Worker: Registered'))
+            .catch(err => console.log(`Service Worker: Error: ${err}`));
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <main class="container">
+      <section class="container__left">
+        <img src="assets/left-image.svg"
+          alt="Imagem ilustrativa de um homem guardando dinheiro em um porquinho"
+          loading="lazy" />
+        <h1>Vire o chefão do seu dinheiro 💵</h1>
+        <p>Jogue, aprenda a investir e faça sua grana crescer! E o melhor,
+          <strong>de graça</strong> 😉</p>
+      </section>
+      <aside class="container__right">
+        <div class="content">
+          <img class="logo" src="assets/logo.svg" alt="Logo Meu Poupig"
+            loading="lazy" />
+          <h2>Faça seu login para começar</h2>
+          <form>
+            <div class="input__group">
+              <input type="text" id="username" name="username" required />
+              <label for="username">Usuário ou Email</label>
+            </div>
+            <div class="input__group">
+              <input type="password" id="password" name="password" required />
+              <label for="password">Senha</label>
+            </div>
+            <p><a href="#">Esqueceu sua senha?</a></p>
+            <button type="submit" aria-label="Faça o Login">Login</button>
+          </form>
+          <div class="divider">
+            <span>ou</span>
+          </div>
+          <div class="google__login" aria-label="Continue com o Google"
+            role="button" tabindex="0">
+            <img src="assets/search.png" alt="Continuar com o Google"
+              loading="lazy" />
+            <span>Continue com o Google</span>
+          </div>
+          <p class="create__account">
+            Não tem um Poupig? <a href="#">Crie sua conta</a>
+          </p>
+        </div>
+      </aside>
+    </main>
+  </body>
+</html>
