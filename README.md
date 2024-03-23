@@ -69,7 +69,7 @@
 
 O projeto "Meu Poupig" nasceu da visão de superar os obstáculos impostos pela educação financeira tradicional, através do poder transformador da tecnologia da informação. Diante de um cenário onde a educação financeira é frequentemente inacessível ou desinteressante para muitos, especialmente para jovens em situações de vulnerabilidade, "Meu Poupig" busca ser uma ponte para o empoderamento. Proporcionando aos jovens não apenas o conhecimento, mas também as ferramentas práticas necessárias, nosso objetivo é habilitá-los a tomar decisões financeiras sólidas e informadas, estabelecendo as bases para um futuro financeiramente seguro e independente.
 
-### 1.1. Tecnologias Utilizadas
+### Tecnologias Utilizadas
 
 Desenvolvemos a plataforma usando:
 
@@ -77,47 +77,47 @@ Desenvolvemos a plataforma usando:
 - **CSS**: Estilização e responsividade.
 - **JavaScript**: Interações dinâmicas e lógica de gamificação.
 
-### 1.2. Web App Progressivo (PWA)
+### Web App Progressivo (PWA)
 
 Nossa plataforma é um PWA, garantindo funcionalidade offline e uma experiência de usuário semelhante a aplicativos nativos. Isso permite que os jovens acessem o conteúdo educacional a qualquer momento, potencializando o aprendizado contínuo.
 
-### 1.3. Otimização do Site
+### Otimização do Site
 
 Optimizamos rigorosamente o site para SEO e acessibilidade, alcançando uma pontuação perfeita no Lighthouse. Removemos o Google Analytics para evitar impactos no desempenho, priorizando uma experiência de usuário fluida e rápida.
 
-### 1.4. Gamificação na Educação
+### Gamificação na Educação
 
 Integramos elementos de jogos para tornar o aprendizado sobre finanças envolvente e divertido. A gamificação é aplicada para reforçar conceitos financeiros chave, incentivando os usuários através de desafios, recompensas e competições.
 
-### 1.5. Objetivos SMART
+### Objetivos SMART
 
 Definimos metas claras e mensuráveis para avaliar o sucesso do nosso projeto, incluindo aumentar a conscientização financeira entre os jovens, melhorar os hábitos de criar poupança e investir, e proporcionar um sistema de feedback contínuo para garantir uma taxa de satisfação alta entre os usuários. Utilizamos metodologias SMART para estabelecer objetivos específicos, mensuráveis, alcançáveis, relevantes e com prazo definido, assegurando um impacto significativo e duradouro na educação financeira dos jovens brasileiros.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 2. Impacto Social e Educativo
+## Impacto Social e Educativo
 
 O projeto "Meu Poupig" nasce de um compromisso profundo com a transformação social através da educação financeira. Em um país como o Brasil, onde a literacia financeira ainda é um desafio significativo para muitos jovens, a necessidade de iniciativas inovadoras e acessíveis é premente. "Meu Poupig" busca endereçar essa lacuna, oferecendo uma plataforma gamificada que não apenas educa, mas também engaja e inspira a próxima geração a tomar decisões financeiras conscientes e informadas.
 
-### 2.1. Educação Financeira como Ferramenta de Empoderamento
+### Educação Financeira como Ferramenta de Empoderamento
 
 Acreditamos firmemente que a educação financeira é uma ferramenta poderosa de empoderamento. Ao equipar jovens com conhecimento sobre gestão de finanças pessoais, economia, investimentos, e poupança, estamos contribuindo para a formação de cidadãos mais preparados para enfrentar desafios econômicos e capazes de construir um futuro mais próspero e estável. "Meu Poupig" coloca esses ensinamentos ao alcance de todos, removendo barreiras e democratizando o acesso à educação financeira de qualidade.
 
-### 2.2. Impacto Além da Sala de Aula
+### Impacto Além da Sala de Aula
 
 O impacto de "Meu Poupig" estende-se além da sala de aula. Ao promover uma abordagem interativa e lúdica para o aprendizado financeiro, a plataforma motiva os jovens a aplicarem seus conhecimentos no dia a dia, influenciando positivamente suas famílias e comunidades. Histórias de usuários mostram que, através do jogo, conversas sobre finanças tornaram-se comuns entre amigos e familiares, promovendo uma cultura de planejamento e responsabilidade financeira.
 
-### 2.3. Fomentando uma Comunidade Engajada
+### Fomentando uma Comunidade Engajada
 
 Além de ser uma ferramenta educacional, "Meu Poupig" é uma comunidade vibrante e engajada de jovens aprendizes, educadores, e entusiastas da educação financeira. A plataforma oferece um espaço seguro para discussão, troca de experiências, e suporte mútuo, onde os usuários podem crescer juntos. Estamos comprometidos em continuar desenvolvendo e adaptando "Meu Poupig" para atender às necessidades e feedbacks dessa comunidade, garantindo que nosso impacto seja sustentável e de longo prazo.
 
-### 2.4. Compromisso com o Futuro
+### Compromisso com o Futuro
 
 "Meu Poupig" é mais do que um projeto; é um compromisso com o futuro da educação financeira no Brasil. Estamos apenas começando e reconhecemos o longo caminho que temos pela frente. Contudo, cada história de sucesso nos motiva a continuar, cada feedback nos guia para melhorias, e cada parceiro que se junta a nós amplia nosso alcance e impacto. Juntos, estamos construindo uma geração mais informada, responsável e preparada para os desafios financeiros do futuro.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 3. Contribuindo
+## Contribuindo
 
 Estamos sempre em busca de colaboradores que possam nos ajudar a expandir e melhorar "Meu Poupig". Seja adicionando novos recursos, melhorando a interface do usuário, ou ajudando na tradução do conteúdo para torná-lo acessível a mais pessoas. Se você está interessado em contribuir para o projeto, veja como pode ajudar:
 
@@ -128,13 +128,13 @@ Estamos sempre em busca de colaboradores que possam nos ajudar a expandir e melh
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 4. Licença
+## Licença
 
 Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes. Isso significa que você é livre para usar, copiar, modificar e distribuir o projeto, desde que forneça o devido crédito e não o utilize para fins comerciais sem permissão.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 5. Agradecimentos
+## Agradecimentos
 
 Um projeto como "Meu Poupig" não seria possível sem o esforço e a dedicação de muitas pessoas. Gostaríamos de agradecer especialmente:
 
