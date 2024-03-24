@@ -93,6 +93,32 @@ form {
   margin: 1rem 0;
 }
 
+.input__group input {
+  padding: 1rem 0 0.5rem 0;
+}
+
+.input__group input:placeholder-shown {
+  text-indent: -9999px;
+}
+
+.input__group input:placeholder-shown + label {
+  font-size: 0.9rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.input__group input:not(:placeholder-shown),
+.input__group input:focus {
+  text-indent: 0;
+}
+
+.input__group input:not(:placeholder-shown) + label,
+.input__group input:focus + label {
+  top: 0;
+  transform: translateY(-100%);
+  font-size: 0.8rem; /* Smaller font size */
+}
+
 form label {
   position: absolute;
   top: 50%;
