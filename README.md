@@ -12,7 +12,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/voaneves/meupoupig">
-    <img src="assets/img/img/left-image.svg" alt="Logo" width="160" height="160">
+    <img src="assets/img/left-image.svg" alt="Logo" width="160" height="160">
   </a>
   <h3 align="center">meupoupig</h3>
   <p align="center">
@@ -63,7 +63,7 @@
 
 <div align="center">
   <a href="https://voaneves.com/meupoupig">
-    <img src="assets/img/img/img/screenshot.png" alt="Screenshot da página inicial">
+    <img src="assets/img/screenshot.png" alt="Screenshot da página inicial">
   </a>
 </div>
 
