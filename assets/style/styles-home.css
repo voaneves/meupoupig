@@ -1,0 +1,390 @@
+html, body {
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 2em;
+}
+
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button {
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  overflow: hidden;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+.line-title {
+  margin: 25px 0 2em 25px;
+  position: relative;
+  width: 250px;
+}
+
+.line-title::before,
+.line-title::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  height: 4px;
+  border-radius: 2px;
+}
+
+.line-title::before {
+  width: 100%;
+  background: #f2f2f2;
+}
+
+.line-title::after {
+  width: 32px;
+  background: #FFBF00;
+}
+
+/* Cards */
+.center-image, .card__background img {
+  width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.slick-slide {
+  padding: 1em 1em;
+}
+
+.card-slider {
+  width: 100%;
+}
+
+.card {
+  background: #fff;
+  display: flex;
+  padding: 2em;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  height: 200px;
+}
+
+.card > * {
+  transition: opacity 350ms;
+}
+.card--opened > * {
+  opacity: 0;
+}
+
+.card__background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -1;
+  text-align: left;
+}
+.card__background::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to top, #000 0, rgba(255, 255, 255, 0));
+}
+
+.card__category {
+  text-transform: uppercase;
+  color: #fff;
+  background: #ffbf00;
+  font-size: 0.85em;
+  font-weight: 600;
+  padding: 0.4em 0.5em 0.25em;
+}
+
+.card__title {
+  text-transform: uppercase;
+  margin: 0.5em 0;
+  color: #fff;
+}
+
+.card__duration {
+  color: #c5c5c5;
+}
+
+/* Content list */
+.content-table {
+  width: calc(100% - 2em);
+  margin: auto;
+  border-collapse: collapse;
+}
+
+.content-table th,
+.content-table td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+.content-table td {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.content-table th {
+  background-color: #f2f2f2;
+}
+
+.difficulty-bar, .duration-bar {
+  width: 100%;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.difficulty-level, .duration-length {
+  height: 10px;
+  border-radius: 10px;
+}
+
+.difficulty-level.easy {
+  width: 33%;
+  background-color: #4CAF50;
+}
+
+.difficulty-level.medium {
+  width: 66%;
+  background-color: #FFEB3B;
+}
+
+.difficulty-level.hard {
+  width: 100%;
+  background-color: #F44336;
+}
+
+.duration-length.short {
+  width: 33%;
+  background-color: #4CAF50;
+}
+
+.duration-length.medium {
+  width: 66%;
+  background-color: #FFEB3B;
+}
+
+.duration-length.long {
+  width: 100%;
+  background-color: #F44336;
+}
+
+/* Navigation */
+.nav {
+  height: 50px;
+  width: 100%;
+  background-color: #3a74c4;
+  position: relative;
+}
+
+.nav > .nav-header {
+  display: inline-block;
+  height: 50px;
+  cursor: pointer;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 8px 10px;
+}
+
+.nav > .nav-header > .nav-title > .avatar {
+  display: inline-block;
+  vertical-align: middle;
+  height: 32px;
+  width: 32px;
+}
+
+.nav > .nav-header > .nav-title > .user {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 10px;
+  padding-top: 5px;
+  font-size: 22px;
+  color: #fff;
+}
+
+.nav-header:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 54px;
+}
+
+.nav-header .dropdown {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  min-height: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  top: 50px;
+  left: 0;
+  cursor: pointer;
+}
+
+.nav-header .dropdown-content {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.nav-header .dropdown-content:hover {
+  background-color: #474747;
+}
+
+.nav-header.active .dropdown {
+  display: block;
+}
+
+.nav-header .dropdown-content .player-stats-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 8px 0;
+  color: white;
+  font-size: 14px;
+}
+
+.nav-header .dropdown-content .player-stats-list li {
+  margin-bottom: 4px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+  height: 50px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px;
+  text-decoration: none;
+  color: #efefef;
+  height: 50px;
+}
+
+.nav > .nav-links > a > span {
+  display: none;
+  position: absolute;
+  padding-left: 10px;
+  padding-top: 1px;
+}
+
+.nav > .nav-links > a > img {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 54px;
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width: 850px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+
+  .nav > .nav-btn > label:hover, .nav #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+    z-index: 1000;
+  }
+
+  .nav > .nav-links > a {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .nav > .nav-links > a > span {
+    display: inline-block;
+  }
+
+  .nav > .nav-links > a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 50px;
+  }
+
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
