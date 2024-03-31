@@ -1,20 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Poupig Quiz</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+      content="Aprenda a investir e aumente sua renda com Meu Poupig. Jogue e torne-se o chefão do seu dinheiro, tudo de graça e com diversão.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://voaneves.com/meupoupig">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap"
+      rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="stylesheet" href="assets/style/styles.css">
+    <title>Meu Poupig - Vire o chefão do seu dinheiro 💵</title>
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.yourwebsite.com/page-url">
+    <meta property="og:title"
+      content="Meu Poupig | Vire o chefão do seu dinheiro">
+    <meta property="og:description"
+      content="Aprenda a investir e aumente sua renda com Meu Poupig. Jogue e torne-se o chefão do seu dinheiro, tudo de graça e com diversão.">
+    <meta property="og:image"
+      content="assets/img/banner.png">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.yourwebsite.com/page-url">
+    <meta property="twitter:title"
+      content="Meu Poupig | Vire o chefão do seu dinheiro">
+    <meta property="twitter:description"
+      content="Aprenda a investir e aumente sua renda com Meu Poupig. Jogue e torne-se o chefão do seu dinheiro, tudo de graça e com diversão.">
+    <meta property="twitter:image"
+      content="assets/img/banner.png">
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Game",
+      "name": "Meu Poupig",
+      "description": "Aprenda a investir e aumente sua renda com Meu Poupig. Jogue e torne-se o chefão do seu dinheiro, tudo de graça e com diversão.",
+      "image": "assets/img/banner.png",
+      "url": "https://voaneves.com/meupoupig"
+    }
+    </script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/service-worker.js')
+            .then(reg => console.log('Service Worker: Registered'))
+            .catch(err => console.log(`Service Worker: Error: ${err}`));
+        });
+      }
+    </script>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <main class="container">
+      <section class="container__left">
+        <img src="assets/img/left-image.svg"
+          alt="Imagem ilustrativa de um homem guardando dinheiro em um porquinho"
+          loading="lazy" />
+        <h1>Vire o chefão do seu dinheiro 💵</h1>
+        <p>Jogue, aprenda a investir e faça sua grana crescer! E o melhor,
+          <strong>de graça</strong> 😉</p>
+      </section>
+      <aside class="container__right">
+        <div class="content">
+          <img class="logo" src="assets/img/logo.svg" alt="Logo Meu Poupig"
+            loading="lazy" />
+          <h2>Faça seu login para começar</h2>
+          <form>
+            <div class="input__group">
+              <input type="text" id="username" name="username" placeholder=" "
+                required />
+              <label for="username">Usuário ou Email</label>
+            </div>
+            <div class="input__group">
+              <input type="password" id="password" placeholder=" "
+                name="password" required />
+              <label for="password">Senha</label>
+            </div>
+            <p><a href="#">Esqueceu sua senha?</a></p>
+            <button type="submit" aria-label="Faça o Login">Login</button>
+          </form>
+          <div class="divider">
+            <span>ou</span>
+          </div>
+          <div class="google__login" aria-label="Continue com o Google"
+            role="button" tabindex="0">
+            <img src="assets/img/search.png" alt="Continuar com o Google"
+              loading="lazy" />
+            <span>Continue com o Google</span>
+          </div>
+          <p class="create__account">
+            Não tem um Poupig? <a href="#">Crie sua conta</a>
+          </p>
+        </div>
+      </aside>
+    </main>
+    <style
+      type="text/css">body { cursor: url('data:image/x-icon;base64,AAACAAEAICAAAAgABwCoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAAAAYAAAAIAAAACAAAAAgAAAAIAAAACAAAAAYAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAAAMAAAAFQAAABwAAAAcAAAAHAAAABwAAAAcAAAAFQAAAAwAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAAAADAAAAB8AAAAvAAAAOAAAADgAAAA4AAAAOAAAADgAAAAvAAAAHwAAAAwAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAAAAwAAAAfAAAANQAAAEUAAABMAAAATAAAAEwAAABMAAAATAAAAEUAAAA1AAAAHwAAAAwAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJAAAAHABTlv8AU5b/AFOW/wBTlv8AU5b/AFOW/wBTlv8AAABTAAAAUQAAAEgAAAA1AAAAHAAAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABMAU5b/AIPt/wCD7f8Ag+3/AIPt/wCD7f8Ag+3/AIPt/wBTlv8AAABUAAAAUQAAAEgAAAAsAAAAEwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFOW/wDX/P8A1/z/ANf8/wDX/P8A1/z/ANf8/wDX/P8A1/z/AIPt/wBTlv8AAABUAAAAUQAAADUAAAAZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABTlv8S//f/ANf8/wDX/P8A1/z/Ev/3/xL/9/8S//f/ANf8/wDX/P8A1/z/AIPt/wBTlv8AAABUAAAAOAAAABwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFOW/xL/9/8A1/z/ANf8/wCD7f8A1/z/ANf8/wDX/P8S//f/ANf8/wDX/P8Ag+3/AFOW/wAAAFUAAAA5AAAAHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAU5b/Ev/3/wDX/P8A1/z/AIPt/wDX/P8A1/z/ANf8/xL/9/8A1/z/ANf8/wCD7f8AU5b/AAAAVQAAADkAAAAcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABTlv8S//f/ANf8/wDX/P8Ag+3/ANf8/wDX/P8A1/z/Ev/3/wDX/P8A1/z/AIPt/wBTlv8AAABVAAAAOQAAABwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFOW/xL/9/8A1/z/ANf8/wCD7f8A1/z/ANf8/wDX/P8S//f/ANf8/wDX/P8Ag+3/AFOW/wAAAFUAAAA5AAAAHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAU5b/Ev/3/wDX/P8A1/z/AIPt/wDX/P8A1/z/ANf8/xL/9/8A1/z/ANf8/wCD7f8AU5b/AAAAVQAAADkAAAAcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABTlv8S//f/ANf8/wDX/P8Ag+3/ANf8/wDX/P8A1/z/Ev/3/wDX/P8A1/z/AIPt/wBTlv8AAABVAAAAOQAAABwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFOW/xL/9/8A1/z/ANf8/wCD7f8A1/z/ANf8/wDX/P8S//f/ANf8/wDX/P8Ag+3/AFOW/wAAAFQAAAA4AAAAHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAAAAMAU5b/Ev/3/wDX/P8A1/z/AIPt/wDX/P8A1/z/ANf8/xL/9/8A1/z/ANf8/wCD7f8AU5b/AAAAUQAAADUAAAAZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJAAAADABTlv8S//f/ANf8/wDX/P8Ag+3/ANf8/wDX/P8A1/z/Ev/3/wDX/P8A1/z/AIPt/wBTlv8AAABIAAAALAAAABMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABMAAAAcAFOW/xL/9/8A1/z/ANf8/wDX/P8Ag+3/AIPt/wCD7f8A1/z/ANf8/wDX/P8Ag+3/AFOW/wAAADUAAAAcAAAACQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGQAAACwAU5b/Ev/3/wDX/P8A1/z/ANf8/wDX/P8A1/z/ANf8/wDX/P8A1/z/ANf8/wCD7f8AU5b/AAAAHwAAAAwAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAAAcAAAANQAAAEgAU5b/Ev/3/wDX/P8A1/z/ANf8/wDX/P8A1/z/ANf8/wDX/P8Ag+3/AFOW/wAAAB8AAAAMAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAP8AAAA3AAAAUAAAAEcAU5b/Ev/3/xL/9/8S//f/Ev/3/xL/9/8S//f/AIPt/wBTlv8AAAAVAAAADAAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAAA/wAAAP8AAABMAAAASQAAAEAAU5b/AFOW/wBTlv8AU5b/AFOW/wBTlv8AU5b/AAAACAAAAAYAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAAD/AAAA/wAAAP8AAAA4AAAANQAAACwAAAAaAAAACgAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAP8AAAD/AAAA/wAAAP8AAAAcAAAAGQAAABAAAAAHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAAIAAAABQAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////////////////////////////+A////AH///gA///wAH//8AB///AAf//wAH//8AB///AAf//wAH//8AB///AAf//wAH//8AB///AAf/+4AP//nAH//44D//+H////g////4H//////////////////////////////////8='), auto; }</style>
   </body>
 </html>
-
