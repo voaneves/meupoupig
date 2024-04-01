@@ -1,19 +1,29 @@
-html, body {
+html,
+body {
   font-family: "Poppins", sans-serif;
   margin-bottom: 2em;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
 button {
-    background: none;
-    border: none;
-    outline: none;
-    box-shadow: none;
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
 }
 
 .no-scroll {
@@ -57,18 +67,19 @@ button {
 
 .line-title::after {
   width: 32px;
-  background: #FFBF00;
+  background: #ffbf00;
 }
 
 /* Cards */
-.center-image, .card__background img {
+.center-image,
+.card__background img {
   width: 100%;
   min-height: 100%;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .slick-slide {
@@ -162,46 +173,48 @@ button {
   background-color: #f2f2f2;
 }
 
-.difficulty-bar, .duration-bar {
+.difficulty-bar,
+.duration-bar {
   width: 100%;
   background-color: #f2f2f2;
   border-radius: 10px;
   overflow: hidden;
 }
 
-.difficulty-level, .duration-length {
+.difficulty-level,
+.duration-length {
   height: 10px;
   border-radius: 10px;
 }
 
 .difficulty-level.easy {
   width: 33%;
-  background-color: #4CAF50;
+  background-color: #4caf50;
 }
 
 .difficulty-level.medium {
   width: 66%;
-  background-color: #FFEB3B;
+  background-color: #ffeb3b;
 }
 
 .difficulty-level.hard {
   width: 100%;
-  background-color: #F44336;
+  background-color: #f44336;
 }
 
 .duration-length.short {
   width: 33%;
-  background-color: #4CAF50;
+  background-color: #4caf50;
 }
 
 .duration-length.medium {
   width: 66%;
-  background-color: #FFEB3B;
+  background-color: #ffeb3b;
 }
 
 .duration-length.long {
   width: 100%;
-  background-color: #F44336;
+  background-color: #f44336;
 }
 
 /* Navigation */
@@ -251,7 +264,7 @@ button {
   background-color: #333;
   min-width: 160px;
   min-height: 100px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   top: 50px;
   left: 0;
@@ -341,7 +354,8 @@ button {
     padding: 13px;
   }
 
-  .nav > .nav-btn > label:hover, .nav #nav-check:checked ~ .nav-btn > label {
+  .nav > .nav-btn > label:hover,
+  .nav #nav-check:checked ~ .nav-btn > label {
     background-color: rgba(0, 0, 0, 0.3);
   }
 
