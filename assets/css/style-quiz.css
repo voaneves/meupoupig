@@ -6,6 +6,13 @@
   font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
 }
 
+button {
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
 body {
   background-color: #ffffff;
   color: #ffffff;
