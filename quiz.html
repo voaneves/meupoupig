@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz - Meu Poupig</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="assets/style/style-quiz.css" />
+    <script src="assets/js/script-quiz.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header" onclick="this.classList.toggle('active')">
+          <div class="nav-title">
+            <img class="avatar" src="assets/img/avatar.png" loading="lazy">
+            <p class="user">TheGamer478</p>
+          </div>
+          <div class="dropdown">
+            <div class="dropdown-content">
+              <ul class="player-stats-list">
+                <li><strong>Pontos Poupux:</strong> 1520</li>
+                <li><strong>Nível:</strong> 35</li>
+                <li><strong>Conquistas desbloqueadas:</strong> 47</li>
+                <li><strong>Tempo de jogo:</strong> 218 horas</li>
+                <li><strong>Membro desde:</strong> Jan 2021</li>
+                <li><strong>Ranking global:</strong> 1243</li>
+                <li><strong>Amigos online:</strong> 5</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <button class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </button>
+        <div class="nav-links">
+          <a href="/" target="_blank">
+            <img src="assets/img/home.png" loading="lazy">
+            <span>Home</span>
+          </a>
+          <a href="/" target="_blank">
+            <img src="assets/img/store.png" loading="lazy">
+            <span>Mercado</span></a>
+          <a href="/" target="_blank">
+            <img src="assets/img/bag.png" loading="lazy">
+            <span>Inventário</span></a>
+          <a href="/" target="_blank">
+            <img src="assets/img/notification.png" loading="lazy">
+            <span>Notificações</span>
+          </a>
+          <a href="/" target="_blank">
+            <img src="assets/img/cog.png" loading="lazy">
+            <span>Configurações</span>
+          </a>
+        </div>
+      </nav>
+      <main>
+        <!-- QUIZZ CONTAINER -->
+        <div id="quizz-container">
+          <p id="question">
+            <span id="question-number">1</span> &#8212;
+            <span id="question-text">Qual é a unidade de medida para
+              metros?</span>
+          </p>
+          <div id="answers-box">
+            <button><span class="btn-letter"></span> <span
+                class="question-answer"></span></button>
+            <button><span class="btn-letter"></span> <span
+                class="question-answer"></span></button>
+            <button><span class="btn-letter"></span> <span
+                class="question-answer"></span></button>
+            <button><span class="btn-letter"></span> <span
+                class="question-answer"></span></button>
+          </div>
+        </div>
+
+        <!-- SCORE BOARD -->
+        <div id="score-container" class="hide">
+          <h2>Parabéns!</h2>
+          <p id="display-score"><span>90</span>%</p>
+          <p>
+            Você acertou <span id="correct-answers">0</span> de
+            <span id="questions-qty">10</span> perguntas
+          </p>
+          <button id="restart">Refazer quiz</button>
+        </div>
+
+        <!-- TEMPLATE RESPOSTA -->
+        <button class="answer-template hide">
+          <span class="btn-letter"></span> <span class="question-answer"></span>
+        </button>
+      </main>
+      <footer>
+        <p>
+          <strong>Copyright</strong> &copy; 2024
+          <a
+            href="https://github.com/voaneves/meupoupig"><strong>Meupoupig</strong></a>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

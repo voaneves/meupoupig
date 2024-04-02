@@ -1,109 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Poupig Quiz</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+      content="Aprenda a investir e aumente sua renda com Meu Poupig. Jogue e torne-se o chefão do seu dinheiro, tudo de graça e com diversão.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://voaneves.com/meupoupig">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/styles.css" />
-    <script src="js/scripts.js" defer></script>
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap"
+      rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180"
+      href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32"
+      href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16"
+      href="assets/img/favicon-16x16.png">
+    <link rel="stylesheet" href="assets/style/styles.css">
+    <title>Meu Poupig - Vire o chefão do seu dinheiro 💵</title>
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.yourwebsite.com/page-url">
+    <meta property="og:title"
+      content="Meu Poupig | Vire o chefão do seu dinheiro">
+    <meta property="og:description"
+      content="Aprenda a investir e aumente sua renda com Meu Poupig. Jogue e torne-se o chefão do seu dinheiro, tudo de graça e com diversão.">
+    <meta property="og:image"
+      content="assets/img/banner.png">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.yourwebsite.com/page-url">
+    <meta property="twitter:title"
+      content="Meu Poupig | Vire o chefão do seu dinheiro">
+    <meta property="twitter:description"
+      content="Aprenda a investir e aumente sua renda com Meu Poupig. Jogue e torne-se o chefão do seu dinheiro, tudo de graça e com diversão.">
+    <meta property="twitter:image"
+      content="assets/img/banner.png">
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Game",
+      "name": "Meu Poupig",
+      "description": "Aprenda a investir e aumente sua renda com Meu Poupig. Jogue e torne-se o chefão do seu dinheiro, tudo de graça e com diversão.",
+      "image": "assets/img/banner.png",
+      "url": "https://voaneves.com/meupoupig"
+    }
+    </script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/service-worker.js')
+            .then(reg => console.log('Service Worker: Registered'))
+            .catch(err => console.log(`Service Worker: Error: ${err}`));
+        });
+      }
+    </script>
   </head>
   <body>
-    <div class="container">
-      <header>
-        <h1>Poupig Quiz</h1>
-      </header>
-      <main>
-        <!-- QUIZZ CONTAINER -->
-        <div id="quizz-container">
-          <p id="question">
-            <span id="question-number">1</span> &#8212;
-            <span id="question-text">Qual é a unidade de medida para metros?</span>
-          </p>
-          <div id="answers-box">
-            <button><span class="btn-letter"></span> <span class="question-answer"></span></button>
-            <button><span class="btn-letter"></span> <span class="question-answer"></span></button>
-            <button><span class="btn-letter"></span> <span class="question-answer"></span></button>
-            <button><span class="btn-letter"></span> <span class="question-answer"></span></button>
+    <main class="container">
+      <section class="container__left">
+        <img src="assets/img/left-image.svg"
+          alt="Imagem ilustrativa de um homem guardando dinheiro em um porquinho"
+          loading="lazy" />
+        <h1>Vire o chefão do seu dinheiro 💵</h1>
+        <p>Jogue, aprenda a investir e faça sua grana crescer! E o melhor,
+          <strong>de graça</strong> 😉</p>
+      </section>
+      <aside class="container__right">
+        <div class="content">
+          <img class="logo" src="assets/img/logo.svg" alt="Logo Meu Poupig"
+            loading="lazy" />
+          <h2>Faça seu login para começar</h2>
+          <form>
+            <div class="input__group">
+              <input type="text" id="username" name="username" placeholder=" "
+                required />
+              <label for="username">Usuário ou Email</label>
+            </div>
+            <div class="input__group">
+              <input type="password" id="password" placeholder=" "
+                name="password" required />
+              <label for="password">Senha</label>
+            </div>
+            <p><a href="#">Esqueceu sua senha?</a></p>
+            <button type="submit" aria-label="Faça o Login">Login</button>
+          </form>
+          <div class="divider">
+            <span>ou</span>
           </div>
-        </div>
-
-        <!-- SCORE BOARD -->
-        <div id="score-container" class="hide">
-          <h2>Parabéns!</h2>
-          <p id="display-score"><span>90</span>%</p>
-          <p>
-            Você acertou <span id="correct-answers">0</span> de
-            <span id="questions-qty">10</span> perguntas
+          <a class="google__login" aria-label="Continue com o Google"
+            role="button" tabindex="0" href="home.html">
+            <img src="assets/img/search.png" alt="Continuar com o Google"
+              loading="lazy" />
+            <span>Continue com o Google</span>
+          </a>
+          <p class="create__account">
+            Não tem um Poupig? <a href="#">Crie sua conta</a>
           </p>
-          <button id="restart">Refazer quiz</button>
         </div>
-
-        <!-- TEMPLATE RESPOSTA -->
-        <button class="answer-template hide">
-          <span class="btn-letter"></span> <span class="question-answer"></span>
-        </button>
-      </main>
-      <footer>
-        <p>
-          <strong>Copyright</strong> &copy; 2024
-          <a href="https://github.com/voaneves/meupoupig"><strong>Meupoupig</strong></a>
-        </p>
-      </footer>
-    </div>
+      </aside>
+    </main>
   </body>
 </html>
-
-<nav class="nav">
-  <input type="checkbox" id="nav-check">
-  <div class="nav-header" onclick="this.classList.toggle('active')">
-    <div class="nav-title">
-      <img class="avatar" src="img/avatar.png" loading="lazy">
-      <p class="user">TheGamer478</p>
-    </div>
-    <div class="dropdown">
-      <div class="dropdown-content">
-        <ul class="player-stats-list">
-          <li><strong>Pontos Poupux:</strong> 1520</li>
-          <li><strong>Nível:</strong> 35</li>
-          <li><strong>Conquistas desbloqueadas:</strong> 47</li>
-          <li><strong>Tempo de jogo:</strong> 218 horas</li>
-          <li><strong>Membro desde:</strong> Jan 2021</li>
-          <li><strong>Ranking global:</strong> 1243</li>
-          <li><strong>Amigos online:</strong> 5</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <button class="nav-btn">
-    <label for="nav-check">
-      <span></span>
-      <span></span>
-      <span></span>
-    </label>
-  </button>
-  <div class="nav-links">
-    <a href="/" target="_blank">
-      <img src="img/home.png" loading="lazy">
-      <span>Home</span>
-    </a>
-    <a href="/" target="_blank">
-      <img src="img/store.png" loading="lazy">
-      <span>Mercado</span></a>
-    <a href="/" target="_blank">
-      <img src="img/bag.png" loading="lazy">
-      <span>Inventário</span></a>
-    <a href="/" target="_blank">
-      <img src="img/notification.png" loading="lazy">
-      <span>Notificações</span>
-    </a>
-    <a href="/" target="_blank">
-      <img src="img/cog.png" loading="lazy">
-      <span>Configurações</span>
-    </a>
-  </div>
-</nav>
