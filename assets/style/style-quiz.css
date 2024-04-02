@@ -380,7 +380,7 @@ footer {
 }
 
 /* RESPONSIVO */
-@media (max-width: 450px) {
+@media (max-width: 520px) {
   #quizz-container,
   #score-container {
     border: none;
