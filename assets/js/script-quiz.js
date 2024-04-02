@@ -105,7 +105,7 @@ const questions = [
         correct: false,
       },
       {
-        answer: 'Um planejamento do quantose pode gastar',
+        answer: 'Um planejamento do quanto se pode gastar',
         correct: true,
       },
       {
