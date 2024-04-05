@@ -1,6 +1,7 @@
 jQuery('.card-slider').slick({
+  centerMode: true,
   slidesToShow:3,
-  autoplay: true,
+  autoplay: false,
   slidesToScroll:1,
   dots: false,
   responsive:[
