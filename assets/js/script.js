@@ -3,10 +3,10 @@ jQuery('.card-slider').slick({
   slidesToShow:3,
   autoplay: false,
   slidesToScroll:1,
-  dots: false,
+  dots: true,
   responsive:[
     {
-      breakpoint: 768,
+      breakpoint: 1200,
       settings: {
         slidesToShow: 2
       }
@@ -15,6 +15,13 @@ jQuery('.card-slider').slick({
       breakpoint: 600,
       settings: {
         slidesToShow: 1
+      }
+    },
+    {
+      breakpoint: 450,
+      settings: {
+        slidesToShow: 1,
+        centerMode: false
       }
     }
   ]
