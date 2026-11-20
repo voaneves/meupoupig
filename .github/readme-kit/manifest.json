@@ -1,0 +1,46 @@
+{
+  "repo": "meupoupig",
+  "branch": "main",
+  "lang": "pt-BR",
+  "license": "MIT",
+  "name": "Meu Poupig",
+  "tagline": "Educação financeira gratuita, com quizzes, vídeos e jogos, para jovens aprenderem a poupar e investir.",
+  "description": "Plataforma gratuita de educação financeira para jovens do Brasil, com trilhas, quizzes, vídeos e jogos. PWA, MIT.",
+  "logo": {
+    "existing": "assets/img/logo.svg"
+  },
+  "buttons": [
+    {
+      "id": "live",
+      "text": "Abrir o site",
+      "kind": "primary",
+      "font": "sans",
+      "href": "https://voaneves.github.io/meupoupig/"
+    },
+    {
+      "id": "about",
+      "text": "Sobre o projeto",
+      "kind": "secondary",
+      "font": "sans",
+      "href": "https://github.com/voaneves/meupoupig#sobre-o-projeto"
+    },
+    {
+      "id": "hire",
+      "text": "Vamos conversar",
+      "kind": "primary",
+      "font": "sans",
+      "href": "https://voaneves.com/#contato",
+      "landing": false
+    },
+    {
+      "id": "site",
+      "text": "voaneves.com",
+      "kind": "secondary",
+      "font": "sans",
+      "href": "https://voaneves.com/",
+      "landing": false
+    }
+  ],
+  "landing": false,
+  "live_url": "https://voaneves.github.io/meupoupig/"
+}

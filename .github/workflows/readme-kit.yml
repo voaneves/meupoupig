@@ -1,0 +1,21 @@
+name: readme-kit
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  contrast:
+    name: Contrast gate
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: voaneves/dtcg-contrast@v1
+        with:
+          config: .github/readme-kit/contrast.config.json
+          fail-on-error: true
+          summary: true
