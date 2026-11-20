@@ -2,7 +2,11 @@
 
 <div align="center">
 
-<img alt="Logotipo Meu Poupig" src="https://raw.githubusercontent.com/voaneves/meupoupig/main/assets/img/logo.svg" width="260" height="71" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/voaneves/meupoupig/main/assets/logo/logo-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/voaneves/meupoupig/main/assets/logo/logo-light.svg" />
+  <img alt="Logo do Meu Poupig: um cofrinho de porquinho, com um ponto vermelho para a moeda" src="https://raw.githubusercontent.com/voaneves/meupoupig/main/assets/logo/logo-light.svg" width="112" height="112" />
+</picture>
 
 <h1>Meu Poupig</h1>
 

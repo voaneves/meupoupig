@@ -7,6 +7,7 @@
   "tagline": "Educação financeira gratuita, com quizzes, vídeos e jogos, para jovens aprenderem a poupar e investir.",
   "description": "Plataforma gratuita de educação financeira para jovens do Brasil, com trilhas, quizzes, vídeos e jogos. PWA, MIT.",
   "logo": {
+    "glyph": "piggy",
     "existing": "assets/img/logo.svg"
   },
   "buttons": [
