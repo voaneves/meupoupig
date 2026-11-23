@@ -5,14 +5,17 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/voaneves/meupoupig/main/assets/logo/logo-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/voaneves/meupoupig/main/assets/logo/logo-light.svg" />
-  <img alt="Logo do Meu Poupig: um cofrinho de porquinho, com um ponto vermelho para a moeda" src="https://raw.githubusercontent.com/voaneves/meupoupig/main/assets/logo/logo-light.svg" width="112" height="112" />
+  <img alt="Logo do Meu Poupig: cofrinho de porquinho com ponto vermelho para a moeda" src="https://raw.githubusercontent.com/voaneves/meupoupig/main/assets/logo/logo-light.svg" width="112" height="112" />
 </picture>
 
 <h1>Meu Poupig</h1>
 
 <p>
-  <strong>Educação financeira gratuita, com quizzes, vídeos e jogos, para jovens aprenderem a poupar e investir.</strong><br />
-  <sub>Trabalho do Projeto Aplicado da XP Educação (2ª turma, Grupo 16), em HTML, CSS e JavaScript</sub>
+  <strong>Plataforma PWA gratuita e gamificada de educação financeira para jovens brasileiros, com aulas modulares e quizzes interativos.</strong><br />
+  <sub>
+    Projeto Aplicado do Grupo 16 da 2ª turma de XP Educação em HTML, CSS e JavaScript —
+    <kbd>HTML5</kbd> · <kbd>CSS3</kbd> · <kbd>JavaScript</kbd> · <kbd>PWA Offline</kbd> · <kbd>Slick Carousel</kbd>
+  </sub>
 </p>
 
 <p>
@@ -24,14 +27,16 @@
 
 <p>
   <a href="https://github.com/voaneves/meupoupig/blob/main/LICENSE"><img src="https://img.shields.io/github/license/voaneves/meupoupig?style=flat-square&color=0A0A0A" alt="Licença MIT" /></a>
-  <img src="https://img.shields.io/badge/HTML%20%C2%B7%20CSS%20%C2%B7%20JS-PWA-b80000?style=flat-square" alt="HTML, CSS e JavaScript, instalável como PWA" />
+  <img src="https://img.shields.io/badge/HTML_%C2%B7_CSS_%C2%B7_JS-PWA-b80000?style=flat-square" alt="HTML, CSS e JavaScript instalável como PWA" />
+  <img src="https://img.shields.io/badge/XP_Educação-Grupo_16-5C5446?style=flat-square" alt="XP Educação Grupo 16" />
 </p>
 
 <p>
   <a href="https://voaneves.github.io/meupoupig/">Site</a> ·
   <a href="#sobre-o-projeto">Sobre</a> ·
-  <a href="#impacto-social-e-educativo">Impacto</a> ·
-  <a href="#contribuindo">Contribuindo</a> ·
+  <a href="#jornada">Jornada</a> ·
+  <a href="#identidade">Paleta &amp; PWA</a> ·
+  <a href="#estrutura">Estrutura &amp; Uso</a> ·
   <a href="#contato">Contato</a>
 </p>
 
@@ -43,82 +48,69 @@
   <img alt="" src="https://raw.githubusercontent.com/voaneves/meupoupig/main/assets/brand/rule-light.svg" width="100%" />
 </picture>
 
+<a id="sobre-o-projeto"></a>
 ## Sobre o projeto
 
-O Meu Poupig ensina educação financeira a jovens do Brasil por meio de trilhas com quizzes, vídeos, textos e jogos.
+Aprenda a poupar, organizar o orçamento e investir sem barreiras financeiras em trilhas modulares com recompensas gamificadas e quizzes diretos no navegador.
 
-Foi desenvolvido como Projeto Aplicado (PA) do Grupo 16 da 2ª turma da XP Educação. A ideia é tornar o ensino de finanças mais dinâmico e interativo, para atrair o interesse dos jovens e reduzir o desinteresse e a evasão.
+Desenvolvido como Projeto Aplicado (PA) do **Grupo 16 da 2ª turma da XP Educação**[^1] sob orientação de **Italo Lucena**. Acesse em <https://voaneves.github.io/meupoupig/>.
 
-<div align="center">
+<p align="center">
   <a href="https://voaneves.github.io/meupoupig/">
-    <img src="https://raw.githubusercontent.com/voaneves/meupoupig/main/assets/img/screenshot.png" alt="Screenshot da página inicial do Meu Poupig">
+    <img src="https://raw.githubusercontent.com/voaneves/meupoupig/main/assets/img/screenshot.png" alt="Screenshot da página inicial do Meu Poupig" />
   </a>
-</div>
+</p>
 
-O projeto parte da visão de superar os obstáculos da educação financeira tradicional com tecnologia. Onde ela é inacessível ou pouco atraente, especialmente para jovens em situação de vulnerabilidade, o objetivo é dar conhecimento e ferramentas práticas para decisões financeiras informadas.
+### Catálogo (`home.html`), aulas (`aula_um.html`) e quizzes (`quiz.html`)
 
-**Site:** <https://voaneves.github.io/meupoupig/>
+- **Catálogo interativo (`home.html`):** carrossel via **Slick Carousel** destacando trilhas e catálogo com **12 módulos** de dificuldade e duração estimada (do orçamento familiar à aposentadoria).
+- **Aulas progressivas (`aula_um.html`):** leitura direta do Módulo 1 (*Desvendando o Mundo do Dinheiro*) com trilha lateral contínua até a avaliação.
+- **Quiz gamificado (`quiz.html`):** lógica pura em `script-quiz.js` com feedback visual imediato, barra de progresso, *Pontos Poupux* e opção de refazer o quiz.
+- **Zero trackers de terceiros:** otimizado para SEO, acessibilidade e nota máxima no Lighthouse com remoção intencional do Google Analytics.
 
-### Tecnologias
+<a id="jornada"></a>
+## Jornada gamificada e conteúdo
 
-- **HTML:** estrutura do site.
-- **CSS:** estilo e responsividade.
-- **JavaScript:** interações e lógica de gamificação.
+```mermaid
+flowchart LR
+  A["Portal index.html (Login)"] --> B["Catálogo home.html (12 Módulos)"]
+  B --> C["Aula aula_um.html (Trilha Lateral)"]
+  C --> D["Quiz quiz.html (script-quiz.js · Pontos Poupux)"]
+  D -->|Refazer| D
+  D -->|Concluir| B
+```
 
-### Web App Progressivo (PWA)
+<a id="identidade"></a>
+## Paleta de cores e camada PWA
 
-A plataforma é um PWA e funciona offline, com uma experiência parecida com a de um aplicativo nativo. Assim, os jovens acessam o conteúdo a qualquer momento.
+Extraída de `assets/css/styles.css`, `assets/css/style-quiz.css` e `assets/img/logo.svg`:
 
-### Otimização do site
+| Papel | Hex | Aplicação |
+| :--- | :--- | :--- |
+| Azul primário | `#3a74c4` | Painel hero (`container__left`), cabeçalho e botões principais |
+| Rosa Poupig | `#fcaed5` | Destaque tipográfico do logotipo oficial |
+| Ciano interativo | `#00c9c8` | Hover de links e opções selecionadas no quiz |
+| Verde / Vermelho | `#2eb94c` / `#e62210` | Feedback visual de acerto e erro |
 
-O site foi otimizado para SEO e acessibilidade, com pontuação perfeita no Lighthouse. O Google Analytics foi removido para não pesar no desempenho.
+<a id="estrutura"></a>
+## Estrutura, execução local e objetivos SMART
 
-### Gamificação
+<dl>
+  <dt><strong>Páginas estáticas e lógica cliente</strong></dt>
+  <dd><code>index.html</code>, <code>home.html</code>, <code>aula_um.html</code> e <code>quiz.html</code> acompanhados por folhas em <code>assets/css/</code> e scripts <code>assets/js/</code> (<code>script.js</code> e <code>script-quiz.js</code>).</dd>
+  <dt><strong>PWA offline (<code>manifest.json</code> + <code>service-worker.js</code>)</strong></dt>
+  <dd>Sirva por HTTP para habilitar o registro do Service Worker e o funcionamento offline em celulares.</dd>
+</dl>
 
-Elementos de jogos reforçam os conceitos financeiros por meio de desafios, recompensas e competições.
+```bash
+git clone https://github.com/voaneves/meupoupig.git
+cd meupoupig
+python -m http.server 8000
+```
 
-### Objetivos SMART
+Concebido com metodologia **SMART**[^2] para elevar a literacia financeira de jovens fora da sala de aula com conteúdo aberto e gratuito. **Créditos:** Grupo 16 da 2ª turma de XP Educação, orientador Italo Lucena e [Victor Neves](https://voaneves.com).
 
-Os objetivos do projeto são aumentar a conscientização financeira dos jovens, melhorar os hábitos de poupar e investir e manter um sistema de feedback contínuo. Foram definidos com a metodologia SMART: específicos, mensuráveis, alcançáveis, relevantes e com prazo.
-
-## Impacto social e educativo
-
-No Brasil, a literacia financeira ainda é um desafio para muitos jovens. O Meu Poupig tenta ajudar com uma plataforma gamificada que ensina, engaja e incentiva decisões financeiras conscientes.
-
-### Educação financeira como ferramenta de empoderamento
-
-Conhecer gestão de finanças pessoais, economia, investimentos e poupança prepara os jovens para os desafios econômicos. A plataforma coloca esse conteúdo ao alcance de todos, sem custo.
-
-### Além da sala de aula
-
-A abordagem lúdica busca motivar os jovens a aplicarem o que aprendem no dia a dia e a levarem a conversa sobre finanças para a família e os amigos.
-
-### Compromisso com o futuro
-
-O projeto está no começo. O feedback dos usuários e de parceiros guia as próximas melhorias.
-
-## Contribuindo
-
-Quer ajudar a melhorar o Meu Poupig? Há várias formas:
-
-- **Desenvolvimento:** código para novas funcionalidades ou correções de bugs.
-- **Design:** melhorias na experiência e na interface.
-- **Conteúdo:** criação de conteúdo educacional financeiro.
-- **Tradução:** tradução do conteúdo para alcançar mais pessoas.
-
-Abra uma [issue](https://github.com/voaneves/meupoupig/issues) ou um pull request.
-
-## Licença
-
-Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](https://github.com/voaneves/meupoupig/blob/main/LICENSE) para mais detalhes.
-
-## Agradecimentos
-
-- Grupo 16 da XP Educação, pela iniciativa e pelo trabalho no desenvolvimento da plataforma.
-- Orientador Italo Lucena, pela orientação e pelo suporte.
-- Comunidade de desenvolvedores e educadores financeiros, por compartilhar conhecimento e recursos.
-- Usuários, pelo feedback.
-
+<a id="contato"></a>
 ## Contato
 
 <p>
@@ -132,6 +124,9 @@ Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](https
   <img alt="VOANEVES mark" src="https://raw.githubusercontent.com/voaneves/meupoupig/main/assets/brand/mark-duo.svg" width="32" height="32" />
 </p>
 
-<p align="center"><sub>Distribuído sob a <a href="https://github.com/voaneves/meupoupig/blob/main/LICENSE">licença MIT</a>.</sub></p>
+<p align="center"><sub>Distribuído sob a <a href="https://github.com/voaneves/meupoupig/blob/main/LICENSE">licença MIT</a> © 2026 <a href="https://github.com/voaneves">Victor Neves</a> · <strong>VOANEVES.</strong></sub></p>
 
 <p align="center"><sub><a href="#top">↑ Voltar ao topo</a></sub></p>
+
+[^1]: Projeto Aplicado desenvolvido pelo Grupo 16 da 2ª turma da XP Educação sob orientação de Italo Lucena.
+[^2]: Objetivos Específicos, Mensuráveis, Atingíveis, Relevantes e Temporais voltados ao engajamento educacional.
